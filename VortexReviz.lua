@@ -660,6 +660,7 @@ lplayer.Chatted:Connect(function(msg)
         lplayer.Character.HumanoidRootPart.Fling:Destroy()
     end
     if string.sub(msg, 1, 8) == (prefix.."fecheck") then
+    end
     if string.sub(msg, 1, 6) == (prefix.."void ") then
         for i,v in pairs(GetPlayer(string.sub(msg, 7))) do
             lplayer.Character.Humanoid.Name = 1
