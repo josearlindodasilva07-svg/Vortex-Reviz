@@ -664,7 +664,7 @@ lplayer.Chatted:Connect(function(msg)
             warn("FE is Enabled (Filtering Enabled)")
             game:GetService("StarterGui"):SetCore("SendNotification", {
                 Title = "FE is Enabled";
-                Text = "Obrigado por usar";
+                Text = "Filtering Enabled. Enjoy using Reviz Admin!";
             })
         else
             warn("FE is Disabled (Filtering Disabled) Consider using a different admin script.")
