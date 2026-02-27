@@ -660,20 +660,6 @@ lplayer.Chatted:Connect(function(msg)
         lplayer.Character.HumanoidRootPart.Fling:Destroy()
     end
     if string.sub(msg, 1, 8) == (prefix.."fecheck") then
-        if game:GetService("Workspace").FilteringEnabled == true then
-            warn("FE is Enabled (Filtering Enabled)")
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "FE is Enabled";
-                Text = "Filtering Enabled. Enjoy using Reviz Admin!";
-            })
-        else
-            warn("FE is Disabled (Filtering Disabled) Consider using a different admin script.")
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "FE is Disabled";
-                Text = "Filtering Disabled. Consider using a different admin script.";
-            })
-        end
-    end
     if string.sub(msg, 1, 6) == (prefix.."void ") then
         for i,v in pairs(GetPlayer(string.sub(msg, 7))) do
             lplayer.Character.Humanoid.Name = 1
