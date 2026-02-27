@@ -213,7 +213,7 @@ banpl = false
 changingstate = false
 statechosen = 0
 
-adminversion = "Reviz Admin by illremember, Version 2.0"
+adminversion = "Vortex Reviz by godenot"
 
 flying = false
 speedfly = 1
@@ -243,7 +243,7 @@ local Frame = Instance.new("Frame")
 local CMDBAR = Instance.new("TextBox")
 ScreenGui.Parent = game:GetService("CoreGui")
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.3, 0.1, 0.1)
+Frame.BackgroundColor3 = Color3.new(30, 20, 40)
 Frame.BackgroundTransparency = 0.3
 Frame.Position = UDim2.new(0.5, 0, 0, 10)
 Frame.Size = UDim2.new(0, 200, 0, 40)
@@ -273,14 +273,14 @@ CMDS.Parent = game:GetService("CoreGui")
 CMDSFRAME.Name = "CMDSFRAME"
 CMDSFRAME.Parent = CMDS
 CMDSFRAME.Active = true
-CMDSFRAME.BackgroundColor3 = Color3.new(30, 20, 40,)
+CMDSFRAME.BackgroundColor3 = Color3.new(55, 35, 70)
 CMDSFRAME.BorderSizePixel = 0
 CMDSFRAME.Draggable = true
 CMDSFRAME.Position = UDim2.new(0, 315, 0, 100)
 CMDSFRAME.Size = UDim2.new(0, 275, 0, 275)
 CMDSFRAME.Visible = false
 ScrollingFrame.Parent = CMDSFRAME
-ScrollingFrame.BackgroundColor3 = Color3.new(30, 20, 40)
+ScrollingFrame.BackgroundColor3 = Color3.new(0.160784, 0.160784, 0.203922)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0, 0, 0.0729999989, 0)
 ScrollingFrame.Size = UDim2.new(1.04999995, 0, 0.92900002, 0)
@@ -3161,7 +3161,7 @@ end)
 wait(0.3)
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Loaded successfully!";
-    Text = "Vortex  Reviz by godenot";
+    Text = "Reviz Admin V2 by illremember";
 })
 wait(0.1)
 print("Reviz Admin V2 loaded!")
