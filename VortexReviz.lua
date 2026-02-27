@@ -661,9 +661,9 @@ lplayer.Chatted:Connect(function(msg)
     end
     if string.sub(msg, 1, 8) == (prefix.."fecheck") then
         if game:GetService("Workspace").FilteringEnabled == true then
-    warn("FE is Enabled (Filtering Enabled)")
+    -- Não faz nada (não mostra notificação)
 else
-    warn("FE is Disabled (Filtering Disabled) Consider using a different admin script.")
+    -- Não faz nada (não mostra notificação)
 end
     end
     if string.sub(msg, 1, 6) == (prefix.."void ") then
