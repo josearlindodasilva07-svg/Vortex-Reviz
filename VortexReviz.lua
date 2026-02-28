@@ -242,7 +242,7 @@ local Frame = Instance.new("Frame")
 local CMDBAR = Instance.new("TextBox")
 ScreenGui.Parent = game:GetService("CoreGui")
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.3, 0.1, 0.1)
+Frame.BackgroundColor3 = Color3.new(30, 20, 40)
 Frame.BackgroundTransparency = 0.3
 Frame.Position = UDim2.new(0.5, 0, 0, 10)
 Frame.Size = UDim2.new(0, 200, 0, 40)
@@ -250,7 +250,7 @@ Frame.Active = true
 Frame.Draggable = true
 CMDBAR.Name = "CMDBAR"
 CMDBAR.Parent = Frame
-CMDBAR.BackgroundColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+CMDBAR.BackgroundColor3 = Color3.new(55, 35, 70)
 CMDBAR.BackgroundTransparency = 0.20000000298023
 CMDBAR.Size = UDim2.new(0, 180, 0, 20)
 CMDBAR.Position = UDim2.new(0.05, 0, 0.25, 0)
@@ -3208,24 +3208,3 @@ else
         Text = "Filtering Disabled. Consider using a different admin script.";
     })
 end
-
-local intro = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
-intro.Parent = game:GetService("CoreGui")
-Frame.Parent = intro
-Frame.BackgroundColor3 = Color3.new(1, 1, 1)
-Frame.BackgroundTransparency = 1
-Frame.Size = UDim2.new(1, 0, 0, 300)
-Frame.Position = UDim2.new(0, 0, -0.4, 0)
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel.BackgroundTransparency = 1
-ImageLabel.Position = UDim2.new(0, 0, 0, 0)
-ImageLabel.Size = UDim2.new(1, 0, 1, 0)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=1542162618"
-Frame:TweenPosition(UDim2.new(0, 0, 0.2, 0), "Out", "Elastic", 3)
-wait(3.01)
-Frame:TweenPosition(UDim2.new(0, 0, 1.5, 0), "Out", "Elastic", 5)
-wait(5.01)
-intro:Destroy()
