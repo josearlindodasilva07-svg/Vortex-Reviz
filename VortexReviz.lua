@@ -242,7 +242,7 @@ local Frame = Instance.new("Frame")
 local CMDBAR = Instance.new("TextBox")
 ScreenGui.Parent = game:GetService("CoreGui")
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(30, 20, 40)
+Frame.BackgroundColor3 = Color3.new(0.3, 0.1, 0.1)
 Frame.BackgroundTransparency = 0.3
 Frame.Position = UDim2.new(0.5, 0, 0, 10)
 Frame.Size = UDim2.new(0, 200, 0, 40)
@@ -256,7 +256,7 @@ CMDBAR.Size = UDim2.new(0, 180, 0, 20)
 CMDBAR.Position = UDim2.new(0.05, 0, 0.25, 0)
 CMDBAR.Font = Enum.Font.SourceSansLight
 CMDBAR.FontSize = Enum.FontSize.Size14
-CMDBAR.TextColor3 = Color3.new(0, 0, 0)
+CMDBAR.TextColor3 = Color3.new(0.945098, 0.945098, 0.945098)
 CMDBAR.TextScaled = true
 CMDBAR.TextSize = 14
 CMDBAR.TextWrapped = true
@@ -272,7 +272,7 @@ CMDS.Parent = game:GetService("CoreGui")
 CMDSFRAME.Name = "CMDSFRAME"
 CMDSFRAME.Parent = CMDS
 CMDSFRAME.Active = true
-CMDSFRAME.BackgroundColor3 = Color3.new(0.223529, 0.231373, 0.309804)
+CMDSFRAME.BackgroundColor3 = Color3.new(30, 20, 40)
 CMDSFRAME.BorderSizePixel = 0
 CMDSFRAME.Draggable = true
 CMDSFRAME.Position = UDim2.new(0, 315, 0, 100)
@@ -665,14 +665,14 @@ lplayer.Chatted:Connect(function(msg)
         if game:GetService("Workspace").FilteringEnabled == true then
             warn("FE is Enabled (Filtering Enabled)")
             game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Vortex Reviz";
-                Text = "Vortex Reviz Carregando";
+                Title = "Vortex Reviz is Enabled";
+                Text = "Filtering Enabled. Enjoy using Vortex Reviz Admin!";
             })
         else
             warn("FE is Disabled (Filtering Disabled) Consider using a different admin script.")
             game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Vortex Reviz";
-                Text = "Vortex Reviz Carregando.";
+                Title = "FE is Disabled";
+                Text = "Filtering Disabled. Consider using a different admin script.";
             })
         end
     end
