@@ -671,8 +671,8 @@ lplayer.Chatted:Connect(function(msg)
         else
             warn("FE is Disabled (Filtering Disabled) Consider using a different admin script.")
             game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "FE is Disabled";
-                Text = "Filtering Disabled. Consider using a different admin script.";
+                Title = "Vortex Reviz";
+                Text = "Vortex Reviz Carregando.";
             })
         end
     end
