@@ -665,8 +665,8 @@ lplayer.Chatted:Connect(function(msg)
         if game:GetService("Workspace").FilteringEnabled == true then
             warn("FE is Enabled (Filtering Enabled)")
             game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Vortex Reviz is Enabled";
-                Text = "Filtering Enabled. Enjoy using Vortex Reviz Admin!";
+                Title = "Vortex Reviz";
+                Text = "Modificado por Godenot";
             })
         else
             warn("FE is Disabled (Filtering Disabled) Consider using a different admin script.")
